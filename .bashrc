@@ -110,3 +110,15 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+#TMUX
+# tests if tmux is installed
+if which tmux 2>&1 >/dev/null; then
+    #if no session is running, start a new one
+    test -z ${TMUX} && tmux
+    
+    #when quitting tmux, try to reattach
+    while test -z ${TMUX}; do
+        tmux attach || break
+    done
+fi

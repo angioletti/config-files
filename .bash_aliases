@@ -15,3 +15,12 @@ alias aptp='apt-get purge'
 alias sss='sudo su -'
 alias shtd='sudo shutdown -h now'
 alias rbt='sudo reboot'
+
+#
+# GIT
+#
+alias gcam='git commit -am'
+alias gcm='git commit -m'
+alias gadd='git add'
+alias gsts='git status'
+alias gpom='git push origin master'

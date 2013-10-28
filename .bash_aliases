@@ -33,3 +33,8 @@ alias gcm='git commit -m'
 alias gadd='git add'
 alias gsts='git status'
 alias gpom='git push origin master'
+
+#
+# Python
+#
+alias pip='sudo pip'
